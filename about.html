@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATCI.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">SavageBeast</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AI.html">Artificial Intelligence</a></li>
+                        <li><a href="DA.html">Digital Agriculture</a></li>
+                        <li><a href="Data.html">Data Analytics</a></li>
+                        <li><a href="CS.html">Cybersecurity</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="GkkpVD2XQAAET0h.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Fullstack Developer</span></h5>
+                    <h1>About Us</h1>
+                    <p> ATCI is an App for those interested in investing, growing, buying and selling, monitoring their businesses, getting updates and knowing more about
+                        your enviroment. Keep clicking to get more features. </p>
+                    <div class="btn-group">
+                        <a href="agro.html" class="btn active">Future</a>
+                        <a href="agro.html" class="btn">Agro Business</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkendin"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Fullstack Developer","Mechatronic Engineer",
+            "Web App Developer","Digital Agriculture","Software Developer",
+            "Data Analytics","Cybersecurity","Digital Transformation",
+            "E-commerce Website Developer","CranQ Network","Uniswap","React.js",
+            "React.js MUI","Next.js","Python Programmer","Material UI/UX Designer",
+            "Artificial Intelligence","Tech Expert","Scientist",
+            "3D Graphics Artwork","3D Web Application Animination",
+            "Space","Future","Musical Artist","Music Producer","Movie Director",
+        "Mining","Diesel Mechanical Engineer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+    
+</body>
+</html>
